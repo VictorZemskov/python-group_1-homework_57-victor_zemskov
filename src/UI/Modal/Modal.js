@@ -9,6 +9,7 @@ const Modal = props => (
       <div className={"Modal" + (props.show ? ' Modal-show' : '')}>
           <h2>{props.title}</h2>
           <Button btnType="Danger" click={props.closed}>CANCEL</Button>
+          <Button btnType="Success" click={props.showAlert}>CONTINUE</Button>
         {props.children}
       </div>
     </div>

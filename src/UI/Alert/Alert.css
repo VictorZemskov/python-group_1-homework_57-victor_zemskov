@@ -1,4 +1,4 @@
-.Modal {
+.Alert {
     text-align: left;
     position: fixed;
     z-index: 500;
@@ -8,19 +8,28 @@
     box-shadow: 1px 1px 1px black;
     padding: 16px;
     left: 15%;
-    top: 30%;
+    top: 5%;
     box-sizing: border-box;
     transition: all 0.3s ease-out;
     transform: translateY(-100vh);
     opacity: 0;
 }
-.Modal-show {
+.Alert-show {
     transform: translateY(0);
     opacity: 1;
 }
 
+.Success {
+    color: #5C9210;
+    top: 15%;
+}
+
+.Danger {
+    color: #944317;
+}
+
 @media (min-width: 600px) {
-    .Modal {
+    .Alert {
         width: 500px;
         left: calc(50% - 250px);
     }
